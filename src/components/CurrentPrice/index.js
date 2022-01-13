@@ -6,8 +6,8 @@ import styles from "./style";
 export default function CurrentPrice() {
   return (
     <View style={styles.headerPrice}>
-      <Text>$ 54423.355</Text>
-      <Text>Ultima Cotação</Text>
+      <Text style={styles.currentPrice}>$ 54423.355</Text>
+      <Text style={styles.textPrice}>Ultima Cotação</Text>
     </View>
   );
 }
