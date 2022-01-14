@@ -1,13 +1,24 @@
 import React from "react";
 
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 
 import styles from "./style";
 
 export default function QuotationsItems() {
   return (
-    <View>
-      <Text></Text>
+    <View style={styles.mainContent}>
+      <View style={styles.contextLeft}>
+        <View style={styles.boxLogo}>
+          <Image
+            style={styles.logBitcoin}
+            source={require("../../../img/bitcoin.png")}
+          />
+          <Text style={styles.dayCotation}>01/05/2021</Text>
+        </View>
+      </View>
+      <View style={styles.contextRight}>
+        <Text style={styles.price}>$ 53331.052</Text>
+      </View>
     </View>
   );
 }
